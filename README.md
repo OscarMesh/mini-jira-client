@@ -2,6 +2,8 @@
 
 A modern task management application built with Next.js, featuring a beautiful UI and robust authentication system.
 
+🌐 **Live Demo**: [https://mini-jira-client.vercel.app](https://mini-jira-client.vercel.app)
+
 ## Features
 
 - 🔐 Secure authentication system
