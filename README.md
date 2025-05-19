@@ -7,11 +7,10 @@ A modern task management application built with Next.js, featuring a beautiful U
 ## Features
 
 - 🔐 Secure authentication system
-- 🎨 Modern UI with dark mode support
 - 📱 Responsive design
 - 🔄 Real-time updates
 - 🎯 Task management and organization
-- 🎨 Beautiful animations and transitions
+
 
 ## Prerequisites
 
