@@ -87,7 +87,7 @@ mini-jira-client/
 - [React Query](https://tanstack.com/query) - Data fetching and caching
 - [NextAuth.js](https://next-auth.js.org/) - Authentication
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Radix UI](https://www.radix-ui.com/) - UI components
+- [Shadcn UI](https://ui.shadcn.com/) - UI components
 - [Zod](https://zod.dev/) - Schema validation
 - [React Hook Form](https://react-hook-form.com/) - Form handling
 
