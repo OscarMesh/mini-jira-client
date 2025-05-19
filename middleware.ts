@@ -8,7 +8,7 @@ export async function middleware(request: NextRequest) {
   // Get the token using next-auth/jwt instead of the full session
   const token = await getToken({
     req: request,
-    secret: process.env.NEXT_PUBLIC_AUTH_SECRET,
+    secret: process.env.NEXTAUTH_SECRET,
   });
 
   const isAuthenticated = !!token;
@@ -17,7 +17,6 @@ export async function middleware(request: NextRequest) {
   if (path.startsWith("/dashboard")) {
     if (!isAuthenticated) {
       const loginUrl = new URL("/auth/login", request.url);
-      // Preserve the original URL to redirect back after login
       loginUrl.searchParams.set("callbackUrl", path);
       return NextResponse.redirect(loginUrl);
     }
@@ -38,7 +37,7 @@ export const config = {
   matcher: [
     // Add routes that need authentication
     "/dashboard/:path*",
-    // Add auth routes that should redirect if already authenticated
+
     "/auth/login",
   ],
 };

@@ -6,7 +6,7 @@ import { loggedUser, login } from "@/services/auth-service";
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   session: { strategy: "jwt", maxAge: 24 * 60 * 60 },
-  secret: process.env.NEXT_PUBLIC_AUTH_SECRET as string,
+  secret: process.env.NEXTAUTH_SECRET as string,
 
   pages: {
     signIn: "/auth/login",
